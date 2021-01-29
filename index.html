@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo">
+                <header class="header">
+                    <h1 class="header__tittle">TODO</h1>
+
+                    <img src="images/icon-sun.svg" alt="toggle theme" class="header__toggleTheme" />
+                </header>
+
+                <div class="new-item-container">
+                    <div class="circle item__status"></div>
+                    <input
+                        type="text"
+                        class="new-item-container__input"
+                        placeholder="Create a new todo..."
+                    />
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="circle item__status"></div>
+                    <p class="item__content">Complete online JavaScript course</p>
+                    <img src="images/icon-cross.svg" alt="" class="item__delete-btn">
+                </div>
+                <div class="item">
+                    <div class="circle item__status"></div>
+                    <p class="item__content">Jog around the park 3x</p>
+                    <img src="images/icon-cross.svg" alt="" class="item__delete-btn">
+                </div>
+                <div class="item">
+                    <div class="circle item__status"></div>
+                    <p class="item__content">10 minutes meditation</p>
+                    <img src="images/icon-cross.svg" alt="" class="item__delete-btn">
+                </div>
+                <div class="item">
+                    <div class="circle item__status"></div>
+                    <p class="item__content">Read for 1 hour</p>
+                    <img src="images/icon-cross.svg" alt="" class="item__delete-btn">
+                </div>
+                <div class="item">
+                    <div class="circle item__status"></div>
+                    <p class="item__content">Pick up groceries</p>
+                    <img src="images/icon-cross.svg" alt="" class="item__delete-btn">
+                </div>
+                <div class="item">
+                    <div class="circle item__status"></div>
+                    <p class="item__content">Complete Todo App on Frontend Mentor</p>
+                    <img src="images/icon-cross.svg" alt="" class="item__delete-btn">
+                </div>
+            </div>
+
+            <div class="todo-information">
+                <a href="#" class="items-left">6 items left</a>
+
+                <div class="view-options">
+                    <a href="#" class="view-options__option view-options__option-active show-all-btn">All</a>
+                    <a href="#" class="view-options__option active-btn">Active</a>
+                    <a href="#" class="view-options__option completed-btn">Completed</a>
+                </div>
+
+                <a href="#" class="clear-btn">Clear Completed</a>
+            </div>
+
+            <footer class="footer">
+                <p class=""> </p>
+            </footer>
+        </div>
+
+
+        
+        <script src="js/main.js"></script>
+        <script src="js/toggleTheme.js"></script>
+    </body>
+</html>
